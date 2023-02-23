@@ -1,0 +1,183 @@
+/** estylo de columnas */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+.contenedor {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 250px;
+    background-color: #2258cc;
+}
+
+.titulo_uno {
+    position: absolute;
+    width: 35%;
+    left: 45%;
+    top: 20%;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+}
+
+
+.fila {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+
+#columna1 {
+    position: absolute;
+    top: 550px;
+    left: 190px;
+    height: 900px;
+    width: 420px;
+    margin-top: 160px;
+    background-color: transparent;
+}
+
+#columna2 {
+    position: absolute;
+    top: 500px;
+    left: 750px;
+    right: 10px;
+    bottom: 600px;
+    height: 1050px;
+    width: 750px;
+    margin-top: 60px;
+    background-color: transparent;
+
+}
+
+#columna3 {
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    width: 750px;
+    margin-top: 150px;
+    background-color: white;
+}
+
+.hr {
+    border-width: 2px;
+}
+
+
+
+
+.cabezera {
+    position: relative;
+    width: 99%;
+    height: 450px;
+    background-color: #2258cc;
+    border: 10px solid white;
+}
+
+
+.contacto_index {
+    position: relative;
+    border-bottom: #111;
+    width: 50%;
+    height: 50%;
+    text-align: left;
+    left: 50%;
+    background-color: blueviolet;
+
+}
+
+.profile_index {
+    background-color: blueviolet;
+    position: relative;
+    border-bottom: #111;
+    width: 50%;
+    text-align: center;
+}
+
+.vinculo_index {
+    background-color: blueviolet;
+    position: relative;
+    border-bottom: #111;
+    width: 50%;
+    text-align: center;
+}
+
+/**
+    estilo para botones 
+*/
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button:hover::before {
+    width: 105%;
+}
+
+button:hover {
+    color: #111;
+}
+
+#botton_link {
+    width: 30%;
+}
+
+/** Estilos de las fotografiaas */
+
+.img_frontal {
+    width: 340px;
+    position: absolute;
+    top: 20px;
+    left: 690px;
+    border: 10px solid whitesmoke;
+}
+
+.bloque_vacio {
+    background-color: transparent;
+    width: 50%;
+    height: 235px;
+}
